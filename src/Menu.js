@@ -6,7 +6,7 @@ function Menu({items}) {
 
   useEffect(() => {
     const handleScroll = () => {
-      if (window.scrollY > window.innerHeight * 0.3) {
+      if (window.scrollY > window.innerHeight * 1) {
         setIsVisible(true);
       } else {
         setIsVisible(false);
