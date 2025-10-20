@@ -1,0 +1,37 @@
+.subheading {
+  padding: 4rem 2rem;
+  text-align: center;
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.subheading p {
+  font-size: 2rem;
+  font-family: 'Playfair Display', serif;
+  font-weight: 400;
+  font-style: italic;
+  color: #555;
+  line-height: 1.6;
+  margin: 0;
+  letter-spacing: 0.02em;
+}
+
+@media (max-width: 768px) {
+  .subheading {
+    padding: 3rem 1.5rem;
+  }
+
+  .subheading p {
+    font-size: 1.5rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .subheading {
+    padding: 2rem 1rem;
+  }
+
+  .subheading p {
+    font-size: 1.25rem;
+  }
+}

@@ -1,0 +1,47 @@
+.section {
+  min-height: 100vh;
+  padding: 4rem 2rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  scroll-margin-top: 70px;
+}
+
+.section h2 {
+  font-size: 2.5rem;
+  color: #333;
+  margin-bottom: 2rem;
+  font-family: 'Playfair Display', serif;
+  font-weight: 400;
+  text-align: center;
+  letter-spacing: 0.05em;
+}
+
+.section-content {
+  max-width: 700px;
+  margin: 0 auto;
+  font-size: 1.1rem;
+  line-height: 1.8;
+  color: #555;
+  font-family: 'Lato', sans-serif;
+}
+
+.section-content p {
+  margin-bottom: 1.5rem;
+  text-align: center;
+}
+
+@media (max-width: 768px) {
+  .section {
+    padding: 3rem 1rem;
+    min-height: 80vh;
+  }
+
+  .section h2 {
+    font-size: 2rem;
+  }
+
+  .section-content {
+    font-size: 1rem;
+  }
+}

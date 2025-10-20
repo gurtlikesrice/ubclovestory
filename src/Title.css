@@ -1,0 +1,53 @@
+.title {
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-image: url('./title_photo.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  position: relative;
+}
+
+.title::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.3);
+}
+
+.title h1 {
+  font-size: 6rem;
+  color: white;
+  text-align: center;
+  margin: 0;
+  z-index: 1;
+  font-family: 'Playfair Display', serif;
+  font-weight: 400;
+  letter-spacing: 0.1em;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+  border: 3px solid white;
+  padding: 2rem 3rem;
+  display: inline-block;
+}
+
+@media (max-width: 768px) {
+  .title h1 {
+    font-size: 2.5rem;
+    padding: 1.5rem 2rem;
+    border: 2px solid white;
+  }
+}
+
+@media (max-width: 480px) {
+  .title h1 {
+    font-size: 2rem;
+    padding: 1rem 1.5rem;
+    letter-spacing: 0.05em;
+  }
+}
