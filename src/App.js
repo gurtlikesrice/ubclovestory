@@ -18,12 +18,12 @@ import ColorPalette from './ColorPalette.js';
   let QNA_SECTION = "Q&A"
 
   const scheduleEvents = [
-    { time: "3:30", event: "Guest Arrival" },
-    { time: "4:00", event: "Wedding Ceremony" },
-    { time: "4:30", event: "Cocktail Hour" },
-    { time: "6:00", event: "Dinner" },
-    { time: "8:00", event: "Party" },
-    { time: "10:00", event: "Event Ends" }
+    { time: "3:30 PM", event: "Guest Arrival" },
+    { time: "4:00 PM", event: "Wedding Ceremony" },
+    { time: "4:30 PM", event: "Cocktail Hour" },
+    { time: "6:00 pm", event: "Dinner" },
+    { time: "8:00 pm", event: "Party" },
+    { time: "10:00 pm", event: "Event Ends" }
   ];
 
 function App() {
