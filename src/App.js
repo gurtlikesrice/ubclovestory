@@ -45,7 +45,7 @@ function App() {
   const qnaList = [
             {
               question: "RVSP Deadline?",
-              answer: "Please RSVP ASAP preferably but you have until end of April."
+              answer: "Please RSVP ASAP if possible, but you have until end of April."
             },
             {
               question: "Parking?",
@@ -115,8 +115,8 @@ function App() {
         </Section>
         <Section title={DRESS_CODE_SECTION}>
           <p>
-            Cocktail attire kindly requested. <b>For ladies</b>, we invite you to dress in the pastel colors below.
-            <b> For gentlemen</b>, solid coloured blazers and dress shirts that match with the palette below are encouraged.
+            Cocktail attire kindly requested. <b>For ladies</b>, we invite you to dress in the pastel colors below to match our palette.
+            <b> For gentlemen</b>, solid coloured blazers are encouraged.
             We look forward to seeing you in your best!
           </p>
           <ColorPalette colors={['#d7cdb5ff',  '#d5dbb8', '#b2c47c', '#d3e2f1', '#efd8cd', '#d5d4d4ff']} />
