@@ -1,0 +1,24 @@
+.divider {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 2rem 0;
+  margin: 0 auto;
+}
+
+.divider img {
+  width: 100px;
+  height: auto;
+  opacity: 0.8;
+  transition: opacity 0.3s ease;
+}
+
+.divider img:hover {
+  opacity: 1;
+}
+
+@media (max-width: 768px) {
+  .divider img {
+    width: 60px;
+  }
+}

@@ -4,7 +4,7 @@
   left: 0;
   right: 0;
   z-index: 1000;
-  background-color: rgba(245, 240, 234, 0.95);
+  background-color: rgba(253, 252, 251, 0.95);
   backdrop-filter: blur(10px);
   padding: 1rem 2rem;
   display: flex;
@@ -24,7 +24,6 @@
   border: none;
   color: #333;
   font-size: 0.95rem;
-  font-family: 'Lato', sans-serif;
   cursor: pointer;
   padding: 0.5rem 1rem;
   transition: all 0.3s ease;

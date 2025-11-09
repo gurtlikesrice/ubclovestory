@@ -8,16 +8,77 @@
 
 body {
   margin: 0;
-  font-family: 'Lato', -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
+  font-family: 'Playfair Display', sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  background-image: url('./title_photo.jpg');
+  position: relative;
+}
+
+body::before,
+body::after,
+#root::before {
+  content: '';
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  background-attachment: fixed;
+  transition: opacity 1s ease-in-out;
+}
+
+body::before {
+  background-image: url('./title_photo.jpg');
+  animation: backgroundFade1 45s infinite;
+}
+
+body::after {
+  background-image: url('./title_photo1.jpg');
+  animation: backgroundFade2 45s infinite;
+}
+
+#root::before {
+  background-image: url('./photo4.jpg');
+  animation: backgroundFade3 45s infinite;
+}
+
+@keyframes backgroundFade1 {
+  0%, 31.11% {
+    opacity: 1;
+  }
+  33.33%, 97.78% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes backgroundFade2 {
+  0%, 31.11% {
+    opacity: 0;
+  }
+  33.33%, 64.44% {
+    opacity: 1;
+  }
+  66.66%, 100% {
+    opacity: 0;
+  }
+}
+
+@keyframes backgroundFade3 {
+  0%, 64.44% {
+    opacity: 0;
+  }
+  66.66%, 97.78% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
 }
 
 .App {
