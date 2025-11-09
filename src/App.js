@@ -69,7 +69,7 @@ function App() {
             },
             {
               question: "How many cats do you guys have?",
-              answer: "One, but one simpulse decision away from another."
+              answer: "One, but one impulse decision away from another."
             },
             {
               question: "How many times did Charles have to ask Grace out?",
