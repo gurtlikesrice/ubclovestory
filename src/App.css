@@ -27,7 +27,13 @@ body::after,
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
+  background-attachment: scroll;
   transition: opacity 1s ease-in-out;
+  -webkit-transform: translateZ(0);
+  transform: translateZ(0);
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  will-change: opacity;
 }
 
 body::before {
@@ -93,4 +99,37 @@ html {
 
 body {
   overscroll-behavior-y: none;
+}
+
+.loading-screen {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 9999;
+  opacity: 1;
+  transition: opacity 0.75s ease-in-out;
+}
+
+.loading-screen.fade-out {
+  opacity: 0;
+}
+
+.loading-gif {
+  width: 150px;
+  height: auto;
+}
+
+.app-content {
+  opacity: 0;
+  transition: opacity 0.75s ease-in-out;
+}
+
+.app-content.fade-in {
+  opacity: 1;
 }

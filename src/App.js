@@ -9,6 +9,7 @@ import SideBySide from './SideBySide.js';
 import Timeline from './Timeline.js';
 import Divider from './Divider.js';
 import ColorPalette from './ColorPalette.js';
+import { useState, useEffect } from 'react';
 
   let TITLE = "Charles x Grace"
 
@@ -27,6 +28,20 @@ import ColorPalette from './ColorPalette.js';
   ];
 
 function App() {
+  const [isLoading, setIsLoading] = useState(true);
+  const [fadeOut, setFadeOut] = useState(false);
+
+  useEffect(() => {
+    const timer = setTimeout(() => {
+      setFadeOut(true);
+      setTimeout(() => {
+        setIsLoading(false);
+      }, 1000);
+    }, 1000);
+
+    return () => clearTimeout(timer);
+  }, []);
+
   const qnaList = [
             {
               question: "RVSP Deadline?",
@@ -67,6 +82,13 @@ function App() {
           ];
 
   return (
+    <>
+      {isLoading && (
+        <div className={`loading-screen ${fadeOut ? 'fade-out' : ''}`}>
+          <img src={require('./cat_running.gif')} alt="Loading..." className="loading-gif" />
+        </div>
+      )}
+      {/* <div className={`app-content ${!isLoading ? 'fade-in' : ''}`}> */}
     <div className="App">
       <Menu items={[LOCATION_SECTION, DRESS_CODE_SECTION, RSVP_SECTION, QNA_SECTION]}/>
       <Title title={TITLE}/>
@@ -123,6 +145,8 @@ function App() {
       </Content>
       <Divider />
     </div>
+    {/* </div> */}
+    </>
   );
 }
 
