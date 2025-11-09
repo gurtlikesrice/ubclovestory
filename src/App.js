@@ -61,7 +61,7 @@ function App() {
             },
             {
               question: "Can I bring a +1?",
-              answer: "Yes, please list any additional guests in the google form. We reserve the right to deny entry."
+              answer: "Yes, please list any additional guests in the google form. We reserve the right to deny entry :)"
             },
             {
               question: "Children ok?",
@@ -115,8 +115,8 @@ function App() {
         </Section>
         <Section title={DRESS_CODE_SECTION}>
           <p>
-            Cocktail attire kindly requested. <b>For ladies</b>, we invite you to dress in pastel colors.
-            <b> For gentlemen</b>, solid color blazers and dress shirts that match with the palette below are encouraged.
+            Cocktail attire kindly requested. <b>For ladies</b>, we invite you to dress in the pastel colors below.
+            <b> For gentlemen</b>, solid coloured blazers and dress shirts that match with the palette below are encouraged.
             We look forward to seeing you in your best!
           </p>
           <ColorPalette colors={['#d7cdb5ff',  '#d5dbb8', '#b2c47c', '#d3e2f1', '#efd8cd', '#d5d4d4ff']} />
